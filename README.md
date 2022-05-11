@@ -1,4 +1,4 @@
-# CNN to predict geolocaiton provided tweet text
+# A CNN to predict geolocaiton provided tweet text
 
 The method employs CNN's ability to detect features spread over data while training. No sophistication in the model's architecture, but using pretty standard approach adjusted to the task nature.
 
