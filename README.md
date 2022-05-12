@@ -10,7 +10,7 @@ The text is transformed to Unicode code points, then normalized to [0, 1] range 
 
 ## A model's overview
 
-There are two models, they differ in amount of convolutional layers, which are the only layers there (except the final Dense layer), but work somewhat the same, when it comes to evaluation, at least on that data I was able to train. The single layer model though goes faster (less epochs) to its best state, which is expected.
+There are two models, they differ in amount of convolutional layers, which are the only layers there (except the final Dense layer), but work somewhat the same, when it comes to evaluation (200km mean error and 0.86 accuracy), at least on that amount of data and filters I was able to train. The single layer model though goes faster (less epochs) to its best state, which is expected.
 
 The first model is based on idea that we want to detect location-specific phrases, names etc. at once and go to the exit right away. It has only one Conv1D layer, kernel_size 15 (max length of the phrase, name) and 1000 filters (amount of different phrases, names). Obviously the more fliters the better and that will affect training performance.
 
